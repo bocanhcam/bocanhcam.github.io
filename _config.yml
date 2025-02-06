@@ -114,7 +114,7 @@ analytics:
 # Site Author
 author:
   name             : "Dương Việt Hoàng"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/avatar.jpg"
   bio              : "I am an web developer."
   location         : "Hà Nội, Việt Nam."
   email            :
