@@ -2,19 +2,44 @@
 layout: archive
 ---
 
-{{ content }}
+    <h1>👋 Hi, I'm Hoang!</h1>
+    <p>Welcome to my personal website.</p>
 
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+    <h2>🚀 About Me</h2>
+    <p>I'm a <strong>web developer</strong> passionate about building fast, scalable applications.</p>
+    <p>In my spare time, I enjoy reading tech blogs and play video games.</p>
 
-{% if paginator %}
-  {% assign posts = paginator.posts %}
-{% else %}
-  {% assign posts = site.posts %}
-{% endif %}
+    <div class="skills">
+        <h2>🔹 Skills</h2>
+        <ul>
+            <li>💻 <strong>Programming</strong>: PHP, JavaScript, Nodejs, Go</li>
+            <li>🦸‍♂️ <strong>Frameworks</strong>: Laravel, React, Vue, Expressjs, Gin</li>
+            <li>☁️ <strong>Cloud</strong>: AWS, Azure</li>
+            <li>🌐 <strong>Web Servers</strong>: Apache, Nginx</li>
+            <li>💾 <strong>Databases</strong>: MySQL, PostgreSQL, MongoDB</li>
+            <li>⚡ <strong>Caching</strong>: Redis</li>
+            <li>🧪 <strong>Testing</strong>: JMeter</li>
+            <li>📊 <strong>Monitoring</strong>: Prometheus</li>
+            <li>🔍 <strong>Search</strong>: Elasticsearch</li>
+        </ul>
+    </div>
 
-{% assign entries_layout = page.entries_layout | default: 'list' %}
-<div class="entries-{{ entries_layout }}">
-  {% include documents-collection.html entries=posts type=entries_layout %}
-</div>
+    <div class="certifications">
+        <h2>🎓 Certifications</h2>
+        <ul>
+            <li>🏅 <strong>Azure Developer Associate</strong></li>
+        </ul>
+    </div>
 
-{% include paginator.html %}
+    <div class="projects">
+        <h2>💡 Personal Projects</h2>
+        <ul>
+            <li><a href="https://github.com/bocanhcam/nova-breadcrumb/">Nova Breadcrumb</a> - This package provides an easy way to define and manage breadcrumbs for Laravel Nova resources.</li>
+            <li><a href="https://dailydose.asia/">Dailydose.asia</a> - News website leverages the power of AI to generate content.</li>
+        </ul>
+    </div>
+
+    <div class="contact">
+        <h2>📢 Contact Me</h2>
+        <p>📧 Email: <a href="mailto:hoangdv240994@gmail.com">hoangdv240994@gmail.com</a></p>
+    </div>
